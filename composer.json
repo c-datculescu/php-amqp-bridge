@@ -1,0 +1,33 @@
+{
+  "name": "c-datculescu/php-amqp-bridge",
+  "description": "Bridge between php-amqp extension and php-amqplib implementation",
+  "keywords": ["amqp", "RabbitMQ", "bridge", "amqp-ext", "php-amqplib"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cristian Datculescu",
+      "email": "cristian.datculescu@gmail.com"
+    }
+  ],
+  "require": {
+    "videlalvaro/php-amqplib": "^2.5"
+  },
+  "suggest": {
+    "ext-amqp": ">=1.4",
+    "videlalvaro/php-amqplib": "2.5.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "AmqpBridge": "src/"
+    },
+    "files": [
+      "src/AmqpBridge/AMQP.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.1"
+    }
+  }
+}
